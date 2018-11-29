@@ -1,4 +1,4 @@
-# shintech/mp3-stream
+# shintech/mp3-stream-dev
 
 ## Table of Contents
 1. [ Synopsis ](#synopsis)
@@ -48,5 +48,5 @@
 - [ ] Scan tracks into DB
 
 <a name='external-links'</a>
-### External Links
+### External Links - References
 - https://www.creativebloq.com/how-to/build-a-simple-music-player-with-react

@@ -31,8 +31,8 @@ module.exports = {
     ctx.body = body
   },
 
-  fetch: async (ctx, next) => {
-    const file = path.join('static', 'files', ctx.params.filename)
+  fetchByTitle: async (ctx, next) => {
+    const file = path.join('static', 'files', ctx.params.title)
     const type = mime[path.extname(file).slice(1)] || 'text/plain'
     const stream = fs.createReadStream(file)
 

@@ -1,13 +1,9 @@
 const Router = require('koa-router')
-const trees = require('./routes/trees')
-const about = require('./routes/about')
-const files = require('./routes/files')
+const tracks = require('./routes/tracks')
 
 module.exports = new Router({
   prefix: '/api'
 })
 
-  .get('/trees', trees.fetch)
-  .get('/about', about.fetch)
-  .get('/tracks', files.list)
-  .get('/tracks/:filename', files.fetch)
+  .get('/tracks', tracks.list)
+  .get('/tracks/:title', tracks.fetchByTitle)

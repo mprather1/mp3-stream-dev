@@ -9,7 +9,7 @@ const TrackList = ({ tracks, selectNowPlaying, addToPlaylist }) => {
   return (
     <Wrapper>
       {tracks.list.map((track, n) =>
-        <Track tracks={tracks} track={track} selectNowPlaying={selectNowPlaying} addToPlaylist={addToPlaylist} />
+        <Track key={n} tracks={tracks} track={track} selectNowPlaying={selectNowPlaying} addToPlaylist={addToPlaylist} />
       )}
     </Wrapper>  
   )

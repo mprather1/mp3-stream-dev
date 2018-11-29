@@ -33,7 +33,7 @@ class Index extends React.Component {
     return (
       <Main title='tracks' host='shintech.ninja' favicon='/static/images/react.svg'>
         <TrackList tracks={tracks} addToPlaylist={addToPlaylist} selectNowPlaying={selectNowPlaying} />
-          {(tracks.nowPlaying) ? <Audio tracks={tracks} selectNowPlaying={selectNowPlaying} media={`${process.env['BASE_URL']}/api/tracks/${tracks.nowPlaying}`} /> : ''}
+          {(tracks.nowPlaying) ? <Audio tracks={tracks} selectNowPlaying={selectNowPlaying} media={`${process.env['BASE_URL']}/api/tracks/${tracks.nowPlaying}`} /> : null}
       </Main>
     )
   }
